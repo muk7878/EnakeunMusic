@@ -111,7 +111,7 @@ async def goback(client: Client, hee: CallbackQuery):
 async def cbhelp(_, lol: CallbackQuery):
     match = lol.matches[0].group(1)
     chat_id = lol.message.chat.id
-    user_id = int(lol.matches[0].group(3))
+    user_id = int(lol.matches[0].group(2))
     if match == "cbhelp":
         return await lol.edit_message_text(
             gm(chat_id, "helpmusic"),
