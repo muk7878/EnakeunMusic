@@ -77,7 +77,6 @@ def del_cmd(func: Callable) -> Callable:
     async def wrapper(client: Client, message: types.Message):
         chat_id = message.chat.id
         if message.chat.type == "private":
-            return await func(client, message)
         try:
             delete_cmd = bool(chat_db.get_chat(chat_id)[0]["del_cmd_mode"])
         except IndexError:
