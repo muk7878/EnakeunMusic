@@ -113,7 +113,7 @@ async def cbhelp(_, lol: CallbackQuery):
     chat_id = lol.message.chat.id
     user_id = lol.from_user.id
     if match == "cbhelp":
-        return await cb.edit_message_text(
+        return await lol.edit_message_text(
             gm(chat_id, "helpmusic"),
             reply_markup=InlineKeyboardMarkup(
                 [
