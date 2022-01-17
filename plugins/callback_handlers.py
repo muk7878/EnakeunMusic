@@ -108,10 +108,10 @@ async def goback(client: Client, hee: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex(r"(cbhelp|(plug_back)\|(\w+))"))
-async def cbhelp(_, cb: CallbackQuery):
-    match = cb.matches[0].group(1)
-    chat_id = cb.message.chat.id
-    user_id = int(cb.matches[0].group(3))
+async def cbhelp(_, lol: CallbackQuery):
+    match = lol.matches[0].group(1)
+    chat_id = lol.message.chat.id
+    user_id = int(match(3))
     if match == "cbhelp":
         return await cb.edit_message_text(
             gm(chat_id, "helpmusic"),
