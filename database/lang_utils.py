@@ -5,7 +5,6 @@ from pyrogram import emoji
 
 from .chat_database import ChatDB
 
-from EnakeunMusic database import lang
 
 lang_folder = path.join(path.dirname(path.realpath(__file__)), "lang")
 code = ""
