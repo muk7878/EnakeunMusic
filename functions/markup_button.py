@@ -40,7 +40,7 @@ def start_markup(chat_id: int, bot_username: str):
                 )
             ],
             [
-                InlineKeyboardButton(gm(chat_id, "helpbutton"),
+                InlineKeyboardButton(gm(chat_id "helpcommands"),
                 InlineKeyboardButton(
                     gm(chat_id, "commands"), url="https://telegra.ph/Kayzu-Teks-01-18"
                 ),
