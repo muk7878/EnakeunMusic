@@ -2,7 +2,7 @@ import json
 from os import path, listdir
 
 from pyrogram import emoji
-
+from EnakeunMusic database Lang
 from .chat_database import ChatDB
 
 lang_folder = path.join(path.dirname(path.realpath(__file__)), "lang")
