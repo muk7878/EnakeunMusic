@@ -26,12 +26,12 @@
       "required": true
     },
     "GROUP_LINK": {
-      "description": "your group support link, can use private or public group, example https://t.me/solidprojects_chat",
+      "description": "your group support link, can use private or public group, example https://t.me/KayzuSupport",
       "required": false,
       "value": "https://t.me/KayzuSupport"
     },
     "CHANNEL_LINK": {
-      "description": "your channel support link, can use private or public channel, example https://t.me/solidprojects",
+      "description": "your channel support link, can use private or public channel, example https://t.me/kayzuchannel",
       "required": false,
       "value": "https://t.me/kayzuchannel"
     },
