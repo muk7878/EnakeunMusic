@@ -107,40 +107,6 @@ async def goback(client: Client, hee: CallbackQuery):
     )
 
 
-@Client.on_callback_query(filters.regex(r"(cbhelp|(plug_back)\|(\w+))"))
-async def cbhelp(_, lol: CallbackQuery):
-    match = lol.matches[0].group(1)
-    chat_id = lol.message.chat.id
-    user_id = lol.from_user.id
-    if match == "cbhelp":
-        return await lol.edit_message_text(
-            gm(chat_id, "helpmusic"),
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            gm(chat_id, "commands"), callback_data=f"plug_back|{user_id}"
-                        ),
-                        InlineKeyboardButton(
-                            gm(chat_id, "backtomenu"), callback_data="goback"
-                        )
-                    ]
-                ]
-            ),
-        )
-    if match == f"plug_back|{user_id}":
-        from_user_id = lol.from_user.id
-        if from_user_id != user_id:
-            return await lol.answer(gm(chat_id, "not_for_you"), show_alert=True)
-        if not modules:
-            load_module(user_id)
-        keyboard = paginate_module(chat_id, user_id)
-        await lol.edit_message_text(
-            gm(chat_id, "here_all_commands"),
-            reply_markup=InlineKeyboardMarkup(keyboard)
-        )
-
-
 @Client.on_callback_query(filters.regex(r"(plugins\.\w+)\|(\d+)"))
 async def cb_help_plugins_(_, cb: CallbackQuery):
     module = cb.matches[0].group(1)
