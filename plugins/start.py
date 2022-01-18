@@ -64,8 +64,7 @@ async def pm_start(_, message: Message):
                         ]
                     ),
                 )
-                    disable_web_page_preview=True,
-                )
+                
     if message.chat.type in ["group", "supergroup"]:
         await message.reply(
             gm(chat_id, "chat_greet").format(mention, bot_name),
