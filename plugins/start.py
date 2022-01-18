@@ -72,7 +72,7 @@ async def pm_start(_, message: Message):
                             [
                                 InlineKeyboardButton(
                                     f"{gm(chat_id, 'commands')}",
-                                    url="https://telegra.ph/Kayzu-Teks-01-18",
+                                    url=f"https://telegra.ph/Kayzu-Teks-01-18",
                                 )
                             ]
                         ]
