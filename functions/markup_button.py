@@ -40,17 +40,15 @@ def start_markup(chat_id: int, bot_username: str):
                 )
             ],
             [
-                InlineKeyboardButton(
-                    gm(chat_id, "commands"), url="https://telegra.ph/Kayzu-Teks-01-18"
-                ),
-            ],
-            [
                 InlineKeyboardButton(gm(chat_id, "channel"), url=config.CHANNEL_LINK),
                 InlineKeyboardButton(
                     gm(chat_id, "group_support"), url=config.GROUP_LINK
                 ),
             ],
             [
+                InlineKeyboardButton(
+                    gm(chat_id, "commands"), url="https://telegra.ph/Kayzu-Teks-01-18"
+                ),
                 InlineKeyboardButton(
                     gm(chat_id, "source_code"),
                     url="https://github.com/Kayzyu/EnakeunMusic",
