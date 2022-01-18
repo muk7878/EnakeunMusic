@@ -66,7 +66,7 @@ async def pm_start(_, message: Message):
                 )
             if query.startswith("help"):
                 return await message.reply(
-                    gm(chat_id, "helpmusic"),
+                    gm(chat_id, "commands"),
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
