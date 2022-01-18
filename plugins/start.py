@@ -64,19 +64,6 @@ async def pm_start(_, message: Message):
                         ]
                     ),
                 )
-            if query.startswith("commands"):
-                return await message.reply(
-                    gm(chat_id, "commands"),
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton(
-                                    f"{gm(chat_id, 'commands')}",
-                                    url=f"https://telegra.ph/Kayzu-Teks-01-18",
-                                )
-                            ]
-                        ]
-                    ),
                     disable_web_page_preview=True,
                 )
     if message.chat.type in ["group", "supergroup"]:
@@ -87,7 +74,7 @@ async def pm_start(_, message: Message):
                     [
                         InlineKeyboardButton(
                             gm(message.chat.id, "group_buttn"),
-                            url=f"https://t.me/{bot_username}?start=help",
+                            url=f"https://t.me/{bot_username}?start=start",
                         )
                     ]
                 ],
