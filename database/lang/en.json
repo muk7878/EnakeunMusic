@@ -54,7 +54,7 @@
   "not_allowed": "**You not allowed to use this command.**",
   "need_privilege": "**You need the** `Can Manage Voice Chats` **permissions.**",
   "add_to_chat": "✙ Add bot to your group ✙",
-  "commands": "Commands",
+  "helpcommands": "Commands",
   "maintainer": "Maintainer",
   "channel": "Channel",
   "group_support": "Support Group",
