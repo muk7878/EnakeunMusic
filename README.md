@@ -1,5 +1,9 @@
 <h2 align="center">🎵Enakeun Music🎵 </h2>
 <p>
+<p align="center">
+  <img src="https://telegra.ph/file/f114fa1b8dac8f8869fb5.jpg">
+</p>
+
 Telegram bot for stream music or video on telegram, 
 powered by <a href="https://github.com/pytgcalls/pytgcalls">PyTgCalls</a>
 and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
