@@ -39,6 +39,15 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
     <a href="https://heroku.com/deploy?template=https://github.com/Kayzyu/EnakeunMusic.git"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
+<details>
+  <summary><b>© CREDITS</b></summary>
+
+
+🔰 **BIG THANKS TO**
+
+*    [Abdul](https://github.com/DoellBarr/solidmusic)    Solid-Music
+
+
 ### Deploy to VPS
 ```
 $ sudo su
