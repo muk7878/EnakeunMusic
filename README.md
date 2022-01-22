@@ -34,15 +34,6 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
     <a href="https://t.me/KayzuSupport"><img alt="Kayzu Support" src="https://img.shields.io/badge/Kayzu-Support-blue.svg?logo=telegram"></a> <br/>
 </ul>
 
-<details>
-  <summary><b>© CREDITS</b></summary>
-
-
-🔰 **BIG THANKS TO**
-
-*    [Abdul](https://github.com/DoellBarr/solidmusic)    Solid-Music
-
-
 <h3>Deploy to Heroku </h3>
 <div>
     <a href="https://heroku.com/deploy?template=https://github.com/Kayzyu/EnakeunMusic.git"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
@@ -63,3 +54,11 @@ $ sudo su
 # nano .env # fill it with your env 
 # python3 main.py
 ```
+
+
+**Credits**
+
+🔰 **BIG THANKS TO**
+
+*    [Abdul](https://github.com/DoellBarr/solidmusic)    Solid-Music
+
