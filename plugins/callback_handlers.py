@@ -29,15 +29,15 @@ async def _button_cb(_, cb: CallbackQuery):
     if next_or_back == "next":
         next_search(chat_id)
         btn = [
-            InlineKeyboardButton("⬅️", f"back{music_or_video}|{user_id}"),
+            InlineKeyboardButton("❮", f"back{music_or_video}|{user_id}"),
             InlineKeyboardButton("🗑️", f"close|{user_id}"),
-            InlineKeyboardButton("➡️", f"next{music_or_video}|{user_id}"),
+            InlineKeyboardButton("❯", f"next{music_or_video}|{user_id}"),
         ]
     else:
         prev_search(chat_id)
         btn = [
             InlineKeyboardButton("🗑️", f"close|{user_id}"),
-            InlineKeyboardButton("➡️", f"next{music_or_video}|{user_id}"),
+            InlineKeyboardButton("❯", f"next{music_or_video}|{user_id}"),
         ]
     text = extract_info(chat_id, stream_result)
     await cb.edit_message_text(
@@ -125,7 +125,7 @@ async def cb_help_plugins_(_, cb: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⬅️ Back", f"plug_back|{user_id}")
+                    InlineKeyboardButton("❮ Back", f"plug_back|{user_id}")
                 ]
             ]
         )
