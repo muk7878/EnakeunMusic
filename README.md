@@ -36,7 +36,7 @@ and <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
 <h3>Deploy to Heroku </h3>
 <div>
-    <a href="https://heroku.com/deploy?template=https://github.com/Kayzyu/EnakeunMusic.git"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+    <a href="https://heroku.com/deploy?template=https://github.com/muk7878/EnakeunMusic.git"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 
